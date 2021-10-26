@@ -1,0 +1,1046 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font awesome css -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google font css -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/styles.css" />
+    <!-- animated css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+
+
+        .btn-custom {
+            font-size: 19px;
+            font-weight: 400;
+            background-color: #008060;
+            border: 5px #008060;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            border-radius: 5px;
+        }
+
+        .btn-custom1 {
+            padding-top: 18px;
+        }
+
+        .btn-custom2 {
+        }
+
+        .header {
+            background-color: #002e25;
+            height: 90px;
+        }
+
+        .header1 {
+            width: 100%;
+        }
+
+
+        .u1 {
+            float: left;
+            padding-left: 12px;
+        }
+
+            .u1 li {
+                float: left;
+                font-size: 18px;
+                font-weight: 400;
+                list-style: none;
+                padding-right: 50px;
+                padding-top: 29px;
+            }
+
+                .u1 li a {
+                    color: lightgray;
+                    text-decoration: none;
+                }
+
+                    .u1 li a:hover {
+                        color: white;
+                    }
+
+        .u2 {
+            float: left;
+        }
+
+            .u2 li {
+                float: left;
+                font-size: 18px;
+                font-weight: 400;
+                list-style: none;
+                padding-right: 45px;
+                padding-top: 29px;
+            }
+
+                .u2 li a {
+                    color: lightgray;
+                    text-decoration: none;
+                }
+
+                    .u2 li a:hover {
+                        color: white;
+                    }
+
+        .heading {
+            padding-top: 90px;
+        }
+
+        .text-center img {
+            margin: auto;
+            width: 80%;
+            padding-top: 60px;
+        }
+
+        .text-center1 {
+            text-align: right;
+        }
+
+        .searchbar {
+            width: 37%;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+            .searchbar:hover {
+                border: 2px solid #002e25;
+            }
+
+        .searchbar1 {
+            width: 55%;
+            border-radius: 4px;
+            border: 1px solid black;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+            .searchbar1:hover {
+                border: 2px solid #002e25;
+            }
+
+        .form {
+            padding-right: 30px;
+            text-align: center;
+        }
+
+        .links a {
+            color: black;
+            font-size: 18px;
+            list-style: none;
+            text-decoration: none;
+            color: #6b7177;
+            padding-top: 10px;
+        }
+
+        .links p {
+            margin-top: 25px;
+        }
+
+        .links a:hover {
+            color: black;
+        }
+
+        .text p {
+            font-size: 19px;
+            text-align: left;
+            color: #6b7177;
+            margin: 0px;
+        }
+
+            .text p a {
+                color: #002e25;
+                font-weight: 400;
+            }
+
+        .text1 h1 {
+            font-size: 33px;
+            font-weight: 400;
+            margin-bottom: 3px;
+        }
+
+        .text1 p {
+            font-size: 18px;
+            text-align: left;
+            color: #6b7177;
+            margin: 0px;
+        }
+
+        .icon {
+            text-align: left;
+        }
+
+            .icon p {
+                font-size: 18px;
+                text-align: left;
+                margin: 0px;
+                color: #6b7177;
+            }
+
+            .icon h4 {
+                font-size: 20px;
+            }
+
+        .box {
+            padding-top: 40px;
+            padding-left: 37px;
+        }
+
+        .para h1 {
+            font-size: 33px;
+            margin-bottom: 20px;
+        }
+
+        .para h4 {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .para p {
+            margin: 0px;
+            color: #6b7177;
+            font-size: 17px;
+        }
+
+        .header2 {
+            height: 320px;
+            background-color: #e8e9eb;
+        }
+
+            .header2 p {
+                font-size: 17px;
+                color: #6b7177;
+                margin: 0px;
+            }
+
+            .header2 h1 {
+                padding-top: 100px;
+                font-size: 36px;
+                padding-left: 90px;
+            }
+
+                .header2 h1 a {
+                    color: #008060;
+                    text-decoration: none;
+                }
+
+        .footer a {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            padding-left: 17px;
+            text-decoration: none;
+        }
+
+        .footer2 {
+            padding-right: 0px;
+            padding-top: 30px;
+            padding-left: 67px;
+        }
+
+            .footer2 h1 {
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .footer2 p {
+                margin: 0px;
+                margin-top: 10px;
+            }
+
+                .footer2 p a {
+                    color: #b6babf;
+                    margin: 0px;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+
+                    .footer2 p a:hover {
+                        color: white;
+                    }
+
+        .footer3 ul li {
+            float: left;
+        }
+
+            .footer3 ul li a {
+                text-decoration: none;
+                color: #d2d5d9;
+            }
+
+            .footer3 ul li h2 {
+                font-size: 17px;
+                padding-left: 10px;
+            }
+
+                .footer3 ul li h2:hover {
+                    color: white;
+                }
+
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-1 {
+            display: block;
+        }
+
+        .sub-menu-1 {
+            position: absolute;
+            width: 242px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+        .custom-dropdown-menu {
+            position: relative;
+        }
+
+        .sub-menu-1 a {
+            color: #6b7177 !important;
+        }
+
+            .sub-menu-1 a:hover {
+                color: black !important;
+            }
+
+        .sub-menu-1 ul {
+            padding-left: 8px !important;
+            padding-right: 5px;
+            margin-top: 10px;
+        }
+
+            .sub-menu-1 ul li {
+                padding-right: 10px !important;
+                padding-left: 10px;
+                padding-top: 0px;
+                padding-bottom: 11px;
+            }
+
+        .sub-menu-2 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-2 {
+            display: block;
+        }
+
+        .sub-menu-2 {
+            position: absolute;
+            width: 246px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+        .custom-dropdown-menu {
+            position: relative;
+        }
+
+        .sub-menu-2 a {
+            color: #6b7177 !important;
+        }
+
+            .sub-menu-2 a:hover {
+                color: black !important;
+            }
+
+        .sub-menu-2 ul {
+            padding-left: 8px !important;
+            padding-right: 5px;
+            margin-top: 10px;
+        }
+
+            .sub-menu-2 ul li {
+                padding-right: 22px !important;
+                padding-left: 11px;
+                padding-top: 0px;
+                padding-bottom: 12px;
+            }
+
+        .padding-btm {
+            padding-bottom: 0px !important;
+        }
+
+        .sub-menu-3 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-3 {
+            display: block;
+        }
+
+        .sub-menu-3 {
+            position: absolute;
+            width: 246px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+            .sub-menu-3 a {
+                color: #6b7177 !important;
+            }
+
+                .sub-menu-3 a:hover {
+                    color: black !important;
+                }
+
+            .sub-menu-3 ul {
+                padding-left: 8px !important;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+
+                .sub-menu-3 ul li {
+                    padding-right: 29px !important;
+                    padding-left: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 11px;
+                }
+
+        .sub-menu-4 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-4 {
+            display: block;
+        }
+
+        .sub-menu-4 {
+            position: absolute;
+            width: 246px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+            .sub-menu-4 a {
+                color: #6b7177 !important;
+            }
+
+                .sub-menu-4 a:hover {
+                    color: black !important;
+                }
+
+            .sub-menu-4 ul {
+                padding-left: 8px !important;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+
+                .sub-menu-4 ul li {
+                    padding-right: 44px !important;
+                    padding-left: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 11px;
+                }
+
+        .sub-menu-5 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-5 {
+            display: block;
+        }
+
+        .sub-menu-5 {
+            position: absolute;
+            width: 254px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+            .sub-menu-5 a {
+                color: #6b7177 !important;
+            }
+
+                .sub-menu-5 a:hover {
+                    color: black !important;
+                }
+
+            .sub-menu-5 ul {
+                padding-left: 8px !important;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+
+                .sub-menu-5 ul li {
+                    padding-right: 48px !important;
+                    padding-left: 15px;
+                    padding-top: 0px;
+                    padding-bottom: 13px;
+                }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header ">
+            <div class="col-xl-2 logo col-lg-2 col-md-2">
+                <div style="padding-top:23px; text-align:right;">
+                    <a href="#"><img src="/static/shopify-logo.png" style="width:63%; height:38px;"></a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 header1">
+                <ul class="u1">
+
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Start</b></a>
+                        <div class="sub-menu-1 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Start your business</a>
+                                    <hr style="color:black;" />
+                                </li>
+                                <li><a href="#">Branding</a></li>
+                                <li><a href="#">Online presence</a></li>
+                                <li><a href="#">Store set up</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Sell</b></a>
+                        <div class="sub-menu-2 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Sell everywhere</a>
+                                    <hr style="width:190px;" />
+                                </li>
+                                <li><a href="#">Online store</a></li>
+                                <li><a href="#">Point of Sale</a></li>
+                                <li><a href="#">Buy Button</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Sales channels</a></li>
+                                <li><a href="#">Custom storefront tools</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Market</b></a>
+                        <div class="sub-menu-3 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Market your business</a>
+                                    <hr />
+                                </li>
+                                <li><a href="#">Email marketing</a></li>
+                                <li><a href="#">Shopify Ping</a></li>
+                                <li><a href="#">Google</a></li>
+                                <li><a href="#">Facebook Ads</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Manage</b></a>
+                        <div class="sub-menu-4 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Manage everything</a>
+                                    <hr />
+                                </li>
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Capital</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 header1 custom-header">
+                <div class="padding header-padding" style="padding-left:30px;">
+                    <ul class="u2">
+                        <li><a href="#"><b>Pricing</b></a></li>
+                        <li class="custom-dropdown-menu">
+                            <a href="#"><b>Learn</b></a>
+                            <div class="sub-menu-5 animate__animated animate__fadeIn">
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Business courses</a></li>
+                                    <li><a href="#">Guides</a></li>
+                                    <li><a href="#">Forums</a></li>
+                                    <li><a href="#">Free tools</a></li>
+                                    <li><a href="#">Podcasts</a></li>
+                                    <li><a href="#">Business encyclopedia</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><b>Log in</b></a></li>
+
+                    </ul>
+                    <div class="btn-custom1">
+                        <button onclick="showalert();" type="button" class="btn btn-primary btn-lg btn-custom "><b>Start free trial</b></button>
+                        <script type="text/javascript">
+                            function showalert() {
+                                
+                                var dialogbox = confirm("Do you want to submit");
+                                if (dialogbox == true) {
+                                    document.write("Succesfully");
+                                 
+                                } else {
+                                    document.write("unsuccessfull");
+                               
+                                }
+
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h1 style="font-size:48px; font-weight:700; text-align:center;">Easily build and run your</h1>
+                    <h1 style="font-size:48px; font-weight:700; text-align:center;">ecommerce website</h1>
+
+                    <h1 style="text-align:center; font-size:42px; color:#6b7177; font-weight:400;">Everything you need to create a beautiful,fully-</h1>
+                    <h1 style="text-align:center; font-size:42px; color:#6b7177; font-weight:400;">featured store.</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <img class="image" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/header-small-fab926874fb4fd301e26f79de634258c2bd7b872dbea986794afd0654f72ec95.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/header-large-a3d244ce6b20ad47c49773ce0d99704159f4a859ad472f03a25e6d7908a86c91.jpg?quality=50 2x" alt="Storeowner's computer displaying Shopify Admin dashboard">
+                </div>
+                <h1 style="font-size:35px; font-weight:400; text-align:center; padding-top:50px;">Start your free 14-day trial today!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="width:100%;">
+
+                <form style="padding-right:21px; text-align:center;">
+                    <input class="searchbar" type="text" placeholder="Enter your email address">
+
+                    <button type="button" class="btn btn-primary btn-lg btn-custom " style="padding-top:10px; margin-bottom:9px; margin-left:17px;"><b>Start free trial</b></button>
+
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top:40px;">
+            <div class="col-md-12" style=" border-top: 1px solid #d2d5d9; width:100%; padding-top:20px;"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="padding-top:40px;">
+            <div class="col-xl-3 col-lg-3 col-md-6 links" style=" border-left: 1px solid #d2d5d9;">
+                <p><a href="#">Introduction</a></p>
+                <p><a href="#">Design your store</a></p>
+                <p><a href="#">Running your store</a></p>
+                <p><a href="#">Secure shopping card</a></p>
+                <p><a href="#">Ecommerce hosting</a></p>
+                <p><a href="#">Marketing & SEO</a></p>
+                <p><a href="#">MObile commerce</a></p>
+                <p><a href="#">App store</a></p>
+                <p><a href="#">Are you a designer?</a></p>
+                <p><a href="#">Full feature list</a></p>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-6 text">
+                <h1 style="font-size:38px; font-weight:400; padding-top:13px;">Shopify ecommerce</h1>
+                <div style="padding-top:20px;">
+                    <p>Shopify includes everything you need to set</p>
+                    <p> up your online store and<a href="#"> sell online.</a> Use your</p>
+                    <p> staff account to login to the administration</p>
+                    <p>area. From there you can build your</p>
+                    <p>ecommerce website, then manage and</p>
+                    <p><a href="#">accept credit card orders.</a></p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 custom-img">
+                <img data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-1-small-e0df9304b151bd2fcda1f1381b6a5d41a8038fa90dc4e711b47016fe9bb4706b.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-1-large-dea7e0b5902014a9a6f0e681204d1421293c519abc1eaf11da2e51070979f985.jpg?quality=50 2x" alt="Shopify’s admin platform for building out an ecommerce website
+                                " class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-1-small-e0df9304b151bd2fcda1f1381b6a5d41a8038fa90dc4e711b47016fe9bb4706b.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-1-large-dea7e0b5902014a9a6f0e681204d1421293c519abc1eaf11da2e51070979f985.jpg?quality=50 2x" style="margin-left: -16px; padding-top: 19px; }">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-8 col-lg-6 col-md-6">
+                <div class="text-center1">
+                    <img data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-2-small-a53d6df3d5e80f9a10353082bdec2f8d2dd6a4afc57e6b2a6824ecab4f2a9134.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-2-large-dd5886e04f39c1931db7fe5ec4047cf297cbba432884adf98e917ee955fcf6ec.jpg?quality=50 2x" alt="Shopify’s platform allows for easy product and inventory management
+                              " class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-2-small-a53d6df3d5e80f9a10353082bdec2f8d2dd6a4afc57e6b2a6824ecab4f2a9134.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/seo/tour/ecommerce_website/feature-2-large-dd5886e04f39c1931db7fe5ec4047cf297cbba432884adf98e917ee955fcf6ec.jpg?quality=50 2x" style="max-width:100%; width:48%;">
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 text1">
+                <p><h1>Add products and</h1></p>
+                <p><h1>manage your</h1></p>
+                <p><h1>inventory</h1></p>
+                <div style="padding-top:18px;">
+                    <p>Add your products,upload their photos,set</p>
+                    <p>stock levels and more to build out your</p>
+                    <p>ecommerce website inventory</p>
+                </div>
+            </div>
+        </div>
+        <hr class="row1" style=" width: 65%; margin-right: 2px; margin-top: 20px; color: #d2d5d9; " />
+        <div class="row box">
+            <div class="col-xl-4 col-md-offset-4 icon col-lg-6 col-md-6 padding">
+                <div class="media custom-media">
+                    <div class="media left">
+                        <i class="fa fa-paperclip" style="font-size:36px; "></i>
+                    </div>
+                    <div class="media-body" style="margin-left:20px;">
+                        <h4 class="media-heading">Add product images</h4>
+                        <p>Upload your product images.No</p>
+                        <p>need to worry about resizing or</p>
+                        <p>optimization-we do that for you.</p>
+                    </div>
+
+
+                </div>
+                <div class="media custom-media2" style="padding-top:50px;">
+                    <div class="media left">
+                        <i class="fa fa-table" style="font-size:36px; "></i>
+                    </div>
+                    <div class="media-body" style="margin-left:20px;">
+                        <h4 class="media-heading">Manage inventory</h4>
+                        <p>The inventory editor combined</p>
+                        <p>with Shopify’s order tracker make</p>
+                        <p>managing your inventory a breeze.</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 icon">
+                <div class="media">
+                    <div class="media left">
+                        <i class="fa fa-clipboard" style="font-size:36px;"></i>
+                    </div>
+                    <div class="media-body" style="margin-left:20px;">
+                        <h4 class="media-heading">Description & details</h4>
+                        <p>Write a product description and </p>
+                        <p>enter the product’s weight,</p>
+                        <p>manufacturer, size, color, and other</p>
+                        <p>such details.</p>
+                    </div>
+                </div>
+                <div class="media custom-media3" style="padding-top:20px;">
+                    <div class="media left">
+                        <i class="fa fa-file-text" style="font-size:36px;"></i>
+                    </div>
+                    <div class="media-body" style="margin-left:20px;">
+                        <h4 class="media-heading">Bulk import your inventory</h4>
+                        <p>You can add your products one at a</p>
+                        <p>time or bulk-import all products</p>
+                        <p>from an Excel or CSV file, eBay, or</p>
+                        <p>Magento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="row1" style=" width: 65%; margin-right: 2px; margin-top: 60px; color: #d2d5d9; " />
+
+        <div class="row">
+            <div class="col--xl-10 col-md-offset-4 col-lg-12 col-md-12 para box">
+                <h1>Organizing your products</h1>
+                <p>Shopify sorts the products you’re selling online into categories called collections. For example,</p>
+                <p>you could put all of your t-shirts and sweaters in a "clothing" collection, while also having some</p>
+                <p>of the same t-shirts in a "sales" collection.</p>
+                <br />
+
+                <p>You can also organize your products by using smart collections. Smart collections group</p>
+                <p>products by conditions that you define. For example, you can create a smart collection that</p>
+                <p>automatically gathers all products under $20 and present this smart collection as "Gift Ideas" to</p>
+                <p>your customers.</p>
+            </div>
+        </div>
+        <hr class="row1" style=" width: 65%; margin-right: 2px; margin-top: 60px; color: #d2d5d9; " />
+
+        <div class="row">
+            <div class="col-xl-10 col-md-offset-4 col-lg-12 col-md-12 para box">
+                <h1>Content management system</h1>
+                <br />
+                <p>Your ecommerce website comes with a content management system (CMS) used to create web</p>
+                <p>pages and blog posts.</p>
+                <br />
+                <h4>Create new web pages</h4>
+                <br />
+                <p>Your ecommerce website includes content management system features. This makes it easy to</p>
+                <p>create new web pages.</p>
+                <br />
+                <h4>Create a blog</h4>
+                <br />
+                <p>Shopify includes built-in blog software. You can create a new blog or import an existing</p>
+                <p>WordPress blog to Shopify. A blog is a great sales and marketing tool.</p>
+            </div>
+        </div>
+
+
+        <hr class="row1" style=" width: 65%; margin-right: 2px; margin-top: 60px; color: #d2d5d9; " />
+        <div class="row">
+            <div class="col-xl-10 col-md-offset-5 col-lg-12 para box padding-left">
+                <h1>Accept orders for your products</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-md-offset-4 col-lg-12 para ">
+                <div style="margin-left:52px;">
+                    <p>It’s easy to view and accept credit card orders from your ecommerce website.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-md-offset-4 col-lg-12 para box">
+                <div class="media">
+
+                    <div class="col-xl-3 col-lg-4">
+                        <i class='fas fa-file-alt' style='font-size:36px'></i>
+                        <h4 style="padding-top:20px;">Customizable order notes</h4>
+                        <p>You can let your customers</p>
+                        <p>write comments and specify</p>
+                        <p>options when they pay for</p>
+                        <p>items on your ecommerce</p>
+                        <p>website.</p>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-4">
+                        <i class='fas fa-truck' style='font-size:36px'></i>
+                        <h4 style="padding-top:20px;">Track order status</h4>
+                        <p>Keep track of which orders</p>
+                        <p>have been paid for, shipped or</p>
+                        <p>delivered. We connect with</p>
+                        <p>fulfillment services like</p>
+                        <p>Amazon Services, Shipwire,</p>
+                        <p>and Rakuten Super Logistics.</p>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-4">
+                        <i class='fas fa-edit' style='font-size:36px'></i>
+                        <h4 style="padding-top:20px;">Order customer details</h4>
+                        <p>See detailed information</p>
+                        <p>about who placed the order.</p>
+                        <p>Our fraud detection system</p>
+                        <p>will warn you if it detects a</p>
+                        <p>suspicious order on your</p>
+                        <p>ecommerce website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <hr class="row1" style=" width: 65%; margin-right: 2px; margin-top: 60px; color: #d2d5d9; " />
+        <div class="row">
+            <div class="col-xl-10 col-md-offset-4 col-lg-12 para box ">
+                <h1>Customer relationship management</h1>
+                <br />
+                <h4>Manage customer groups</h4>
+                <br />
+                <p>Create groups of customers based upon search filters like: where they’re located, money spent,</p>
+                <p>etc. Use this information to better understand customer behaviours or target these customers</p>
+                <p>with marketing emails.</p>
+                <br />
+                <h4>Create customer accounts</h4>
+                <br />
+                <p>You have the option to make your store public or restrict purchases to only those with accounts.</p>
+                <p>The account only option is useful if you want to set up a private or wholesale ecommerce site.</p>
+            </div>
+        </div>
+
+
+        <hr class="row1" style=" width: 65%; margin-right: 2px; margin-top: 60px; color: #d2d5d9; " />
+        <div class="row">
+            <div class="col-xl-12 col-md-offset-4 col-lg-12 para box">
+                <h1>Set up multiple staff logins</h1>
+                <br />
+                <p>Shopify lets you to create staff accounts for your ecommerce website. These accounts are used</p>
+                <p>to log in to the administration area where you manage your online store.</p>
+                <br />
+                <p>You can restrict permission of staff accounts so that only certain people can process orders,</p>
+                <p>manage inventory, manage the blog and web pages, install apps or other things in the</p>
+                <p>administration area.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="padding-top:105px;">
+
+        <div class="row header2">
+            <div class="col-xl-7 col-lg-12 call-to-action">
+
+                <h1>Start your 14-day<a href="#"> free trial</a> today!</h1>
+            </div>
+            <div class="col-xl-5 col-lg-12 call-to-action" style="padding-top:97px;">
+                <form>
+                    <input class="searchbar1" type="text" placeholder="Enter your email address">
+
+                    <button type="button" class="btn btn-primary btn-lg btn-custom " style="padding-top:10px; margin-bottom:9px; margin-left:17px;"><b>Start free trial</b></button>
+
+                </form>
+                <p>Try Shopify free for 14 days, no credit card required. By entering</p>
+                <p>your email, you agree to receive marketing emails from Shopify.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-height" style="height: 555px; background-color: #002e25;">
+
+        <div class="row">
+            <div class="col-md-12 footer">
+                <div style="padding-left: 50px; padding-top: 25px;">
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press and Media</a>
+                    <a href="#">Shopify Plus</a>
+                    <a href="#">Sitemap</a>
+
+                </div>
+                <hr style="width: 90%; margin: 0; margin-left: 64px; margin-top: 25px; border-color: #6b71776e; text-align: left;" />
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 footer2">
+                <div class="col-md-4">
+                    <h1>ONLINE STORE</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">Sell online</a></p>
+                        <p><a href="#">features</a></p>
+                        <p><a href="#">Examples</a></p>
+                        <p><a href="#">Website editor</a></p>
+                        <p><a href="#">Online retail</a></p>
+                        <p><a href="#">Ecommerce website</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="padding-top:23px;">
+                        <p><a href="#">Domain names</a></p>
+                        <p><a href="#">Themes</a></p>
+                        <p><a href="#">Shopping cart</a></p>
+                        <p><a href="#">Ecommerce hosting</a></p>
+                        <p><a href="#">Mobile commerce</a></p>
+                        <p><a href="#">Ecommerce software</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="padding-top:23px;">
+                        <p><a href="#">Online store builder</a></p>
+                        <p><a href="#">Oberlo</a></p>
+                        <p><a href="#">Dropshipping business</a></p>
+                        <p><a href="#">Store themes</a></p>
+                        <p><a href="#">Cross-Border Ecommerce</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 footer2">
+                <div class="col-md-4">
+                    <h1>POINT OF SALE</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">Point of sale</a></p>
+                        <p><a href="#">Features</a></p>
+                        <p><a href="#">Hardware</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1>SUPPORT</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">24/7 support</a></p>
+                        <p><a href="#">Shopify Help Center</a></p>
+                        <p><a href="#">Forums</a></p>
+                        <p><a href="#">API documentation</a></p>
+                        <p><a href="#">Free tools</a></p>
+                        <p><a href="#">Free stock photos</a></p>
+                        <p><a href="#">Website for sale</a></p>
+                        <p><a href="#">Hatchful</a></p>
+                        <p><a href="#">Business name generator</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1>SHOPIFY</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Partner program</a></p>
+                        <p><a href="#">Affiliated program</a></p>
+                        <p><a href="#">App developers</a></p>
+                        <p><a href="#">Investors</a></p>
+                        <p><a href="#">Blog topics</a></p>
+                        <p><a href="#">Shopify events</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 110%; margin: 0; margin-left: -15px; margin-top: 25px; border-color: #6b71776e; text-align: left;" />
+        <div class="row footer3">
+            <div class="col-xl-6 col-lg-6">
+
+                <a href="#"><i class="fa fa-facebook-square" style="font-size:24px; color:white; padding-left:68px; padding-top:45px;"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-youtube-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-instagram" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-pinterest-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+
+            </div>
+            <div class="col-xl-6 col-lg-6 floa">
+                <div style=" padding-left: 290px; padding-top: 45px;">
+                    <ul>
+                        <li><a href="#"><h2>Terms of Service</h2></a></li>
+                        <li><a href="#"><h2>Privacy policy</h2></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+ </html>

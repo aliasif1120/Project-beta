@@ -1,0 +1,842 @@
+﻿<DOCTYPE!>
+<html>
+<head>
+
+
+
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: "roboto", Arial, Helvetica, sans-serif !important;
+        }
+
+        .logo {
+            max-width: 120px;
+            padding-right: 50px;
+        }
+
+        .searchbox input {
+            width: 100%;
+        }
+
+        .searchbar {
+            border: 0px;
+            border-bottom: 2px solid #1B334B;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-top: 5%;
+            outline: none;
+        }
+
+        .paddingtop {
+            padding-bottom: 0px;
+        }
+
+        .paddingbottom {
+            margin-bottom: 20px;
+        }
+
+        .row a {
+            padding-left: 30px;
+            padding-right: 30px;
+            color: black;
+            font-weight: 600;
+        }
+
+
+
+        .padding-top-20 {
+            padding-top: 20px;
+        }
+
+        .padding {
+            padding-top: 20px;
+        }
+
+        .padding3 {
+            padding-top: 30px;
+        }
+
+        .padding-size-20 {
+            font-size: 20px;
+        }
+
+        .padding-size-30 {
+            font-size: 30px;
+            padding-top: 30px;
+        }
+
+        h6 {
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        h3 {
+            text-align: center;
+            padding-top: 10px;
+            padding-right: 131px;
+            padding-left: 131px;
+        }
+
+        .padding-right-20 {
+            padding-top: 30px;
+        }
+
+        .btn-custom {
+            border-radius: 0px;
+            background-color: black;
+            font-size: 20px;
+            border: 2px solid black;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 8px;
+            padding-top: 10px;
+        }
+
+        .btn-custom3 {
+            background-color: orangered;
+            font-size: 17px;
+            border-radius: 0px;
+            height: 32px;
+            border: 2px solid orangered;
+            width: 100%;
+            text-align: center;
+            padding-top: 0px;
+            font-weight: 700;
+        }
+
+        .textsize {
+            font-size: 20px;
+        }
+
+        select.textsize {
+            height: 52px !important;
+        }
+
+        @media screen and (min-width:991px) {
+            #grad1 {
+                height: 200px !important;
+            }
+
+            .custom-col-md-2 {
+                width: 20% !important;
+            }
+        }
+
+        #grad3 a {
+            color: #fff;
+        }
+
+        #grad1 {
+            height: auto;
+            background-color: #f4f4f4;
+            background-position: left center;
+            background-repeat: no-repeat;
+            padding-top: 60px;
+            padding-right: 30px;
+            padding-bottom: 25px;
+            padding-left: 30px;
+            background-size: cover;
+            background-image: url(https://try.alexa.com/wp-content/uploads/2016/12/pattern_bw_reverse.png);
+        }
+
+        #grad2 {
+            height: auto;
+            background-color: #f4f4f4;
+            background-position: left center;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            background-size: cover;
+            background-image: url(https://try.alexa.com/wp-content/uploads/2016/12/pattern_bw_reverse.png);
+        }
+
+        #grad3 {
+            background-color: #174b75;
+            height: auto;
+            padding-top: 0px;
+            text-align: left;
+            padding-top: 55px;
+            padding-bottom: 55px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-top-width: 0px;
+            font-size: 13px;
+        }
+
+        #grad4 {
+            background-color: #1b334b;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-size: cover;
+            display:none;
+        }
+
+            #grad4 a {
+                color: white;
+            }
+
+        #grad5 {
+            background-image: url(https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_hero-bg-img-2.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding-top: 120px;
+            padding-right: 30px;
+            padding-bottom: 0px;
+            padding-left: 30px;
+            margin-top: -101px;
+            background-size: cover;
+        }
+
+        #grad5 {
+            color: white;
+        }
+
+        .text_left {
+            text-align: center;
+        }
+
+        .text_auto {
+            text-align: center;
+        }
+
+        .text_padding {
+            padding: 0px;
+            padding-top: 4px;
+        }
+
+        .Padding2 {
+            padding-top: 50px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .btn-custom2 {
+            margin: auto;
+            padding-top: 50px;
+            font-size: 15px;
+            padding-left: 430px;
+            width: 20%;
+        }
+
+        .no-padding {
+            padding: 0px;
+        }
+
+        .padding-right-30 {
+            padding-top: 50px;
+        }
+
+        .text-center img {
+            margin: auto;
+        }
+
+        .borders {
+            border-right: 1px solid rgb(210, 222, 222);
+            border-left: 1px solid rgb(210, 222, 222);
+        }
+
+        .width {
+            width: 85%;
+            margin: auto;
+        }
+
+        .btn-custom4 {
+            padding-top: 15px;
+            float: left;
+        }
+
+        .menu li {
+            height: 71px;
+            padding-top: 15px;
+            float: left;
+            margin-right: 28px;
+            list-style: none;
+        }
+
+        .menu {
+            text-decoration: none;
+            padding-left: 100px;
+        }
+
+        .menu-2 li {
+            padding-top: 0px;
+            height: 20px;
+            margin-right: 18px;
+        }
+
+        .menu-2 {
+            padding-left: 0px
+        }
+
+
+        .header {
+            font-size: 20px;
+        }
+
+        .padding-0 {
+            padding-top: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        .fonts {
+            padding-left: 20px;
+        }
+
+        .header-padding {
+            margin-top: -31px;
+            background-color: #1B334A;
+            padding-top: 23px;
+        }
+
+        .logo1 {
+            margin-top: -7px;
+        }
+
+        .height {
+            height: 53px;
+            padding: 0px;
+        }
+
+        .text1 {
+            font-size: 17px;
+            color: orangered;
+            height: 25%;
+            padding-left: 10px;
+            padding-right: 0px;
+            padding-top: 30px;
+            font-weight: 700 !important;
+        }
+
+        .text2 {
+            font-size: 50px;
+            margin-left: 115px;
+            padding-right: 20px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .text3 {
+            font-size: 30px;
+            text-align: left;
+            padding-top: 5px;
+            width: 100%;
+            margin-left: 85px;
+        }
+
+        .R-1 {
+            height: 510px;
+        }
+
+        .R-3 {
+            margin-top: -81px;
+        }
+
+        .R-4 {
+            margin-top: -63px;
+        }
+
+        .text4 {
+            margin-top: -75px;
+            margin-left: -30px;
+        }
+        .R-6{
+            padding-left:0px;
+            padding-right:0px;
+        }
+
+        .btn-1 {
+            padding-left: 86px;
+            padding-top: 15px;
+        }
+
+        .container-fluid {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .features1 a {
+            padding-left: 0px;
+            padding-right: 0px;
+            font-weight: 400;
+        }
+        .features h3{
+            font-weight:400;
+            font-size:16px!important;
+            text-align:center;
+            width:100%;
+        }
+        .features a{
+            padding-left:0px;
+            padding-right:0px;
+            font-weight:400;
+        }
+        .features img:hover{
+            box-shadow:8px 7px 6px  #ccc;
+        }
+        .features h3 > a{
+            position: relative;
+            color: #000;
+            text-decoration: none;
+        }
+        .features h3 a:hover{
+            color:#000;
+        }
+        .features h3::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out 0s;
+            }
+        .features h3:hover::before{
+            visibility:visible;
+            transform:scaleX(1);
+        }
+        .text_right{
+            text-align:left;
+        }
+        .R-7{
+            padding-right:0px;
+            padding-left:0px;
+        }
+
+        .responsive {
+            width: 100%;
+            margin-top: 30px;
+            background-color: #1b334b;
+        }
+        .texting{
+            font-size:20px;
+           
+        }
+        .u1 li{
+            float:left;
+            list-style:none;
+        }
+        .u1 li a{
+            color:white;
+        }
+        .u2 {
+            padding: 0px;
+        }
+        .u2 li a {
+            padding:0px;
+        }
+        .btn-custom5{
+            float:left;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="grad4">
+            <div class="row height">
+            <div class="col-md-6" style=" background-color: #1b334b; padding-top: 19px;">
+                
+                <img  src="https://try.alexa.com/wp-content/uploads/2017/01/alexa-logo.png" srcset="https://try.alexa.com/wp-content/uploads/2017/01/alexa-logo.png 1x, https://try.alexa.com/wp-content/uploads/2018/03/alexa-logo-retina.png 2x" width="253" height="48"  style="max-height:48px;height:auto; margin-left:-13px;"  alt="Alexa.com Logo" retina_logo_url="https://try.alexa.com/wp-content/uploads/2018/03/alexa-logo-retina.png" class="fusion-standard-logo logo1">
+                
+                </div>
+            <div class="col-md-6 header-padding">
+                <ul class="menu">
+                    <li> <a href="/"><p class="header">HOME</p> </a> </li>
+                    <li> <a href="/about/me"><p class="header">ABOUT ME</p> </a> </li>
+                    <li> <a href="/email"><p class="header">EMAIL</p></a> </li>
+                    <li class="padding-0">
+                       
+                        <ul class="menu-2">
+                         
+                      <li><a href="#"><p>TAKE TOUR</p></a></li>
+                      <li><a href="#"><p>GUIDES</p></a></li> 
+                      <li><a href="#"><p>BLOG</p></a></li>
+                      <li><a href="#"><p>LOG IN</p></a></li>
+                    </ul>
+                          
+                        <div class="btn-custom4">
+                            <button type="button" class="btn btn-primary btn-sm btn-custom3">START YOUR FREE TRIAL</button>
+                        </div>
+                        </li>
+</ul>
+            </div>
+        </div>
+        </div>    
+            
+        <div class="row responsive">
+            <div class="col-md-12">
+                <img src="https://try.alexa.com/wp-content/uploads/2017/01/alexa-logo.png" srcset="https://try.alexa.com/wp-content/uploads/2017/01/alexa-logo.png 1x, https://try.alexa.com/wp-content/uploads/2018/03/alexa-logo-retina.png 2x" width="253" height="48" style="max-height:48px;height:auto; margin-left:-13px;" alt="Alexa.com Logo" retina_logo_url="https://try.alexa.com/wp-content/uploads/2018/03/alexa-logo-retina.png" class="fusion-standard-logo logo1">
+                <ul class="u1">
+                    <li><a href="/" class="texting">HOME</a></li>
+                    <li><a href="/about/me " class="texting">ABOUT ME</a></li>
+                    <li><a href="/email" class="texting">EMAIL</a></li>
+                    <li style="margin-top:55px; margin-left:-400px;">
+                        <ul class="u2">
+                            <li style="padding-right:17px;"><a href="#">TAKE TOUR</a></li>
+                            <li style="padding-right:17px;"><a href="#">GUIDES</a></li>
+                            <li style="padding-right:17px;"><a href="#">BLOG</a></li>
+                            <li style="padding-right:17px;"><a href="#">LOG IN</a></li>
+
+                        </ul>
+                        <div class="btn-custom5">
+                        <button type="button" class="btn btn-primary btn-sm btn-custom3">START YOUR FREE TRIAL</button></div>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        
+        <div id="grad5">
+            <div class="container">
+            <div class="row R-1 ">
+                <div class="col-md-6">
+                    <p><h3 class="text1">SEO AND COMPETETIVE ANALYSIS SOFTWARE</h3></p>
+                    <div class="text4">
+                        <p><h5 class="text2"><b>Find,Reach,</b> </h5></p>
+                        <p><h5 class="text2"><b>and Convert Your</b> </h5></p>
+                        <p><h5 class="text2"><b>Audience</b> </h5></p>
+                    </div>
+                    <div class="text3">
+                        <p><h2>Get better marketing results by finding unntapped</h2></p>
+                        <p><h2>opportunities to grow your business.</h2></p>
+                    </div>
+                    <div class="btn-custom4 btn-1">
+                        <button type="button" class="btn btn-primary btn-sm btn-custom3">START YOUR FREE TRIAL</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_hero-img-6.png" style="width:172%; padding-top:0px;" />
+                </div>
+            </div>
+        </div>
+
+     </div>
+     </div>
+    <div class="container">
+      
+
+
+
+        <!--section "CALL TO ACTION-->
+        <div id="grad1">
+            <div class="R-3">
+            <div class="row">
+                
+                <div class="col-md-12">
+                    <h6 class="text-center padding-size-20"> HOW CAN <b>ALEXA</b> HELP YOU TODAY?</h6>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h6 class="text-centre padding-size-20 R-4">I WANT TO </h6>
+                        </div>
+
+                        <div class="col-md-8">
+                            <select class="form-control  textsize">
+                                <option value="0">discover ideas to grow my traffic</option>
+                                <option value="1">create conttent that engage my audience</option>
+                                <option value="2">improve my seo</option>
+                                <option value="3">find easy-to-rank keywords</option>
+                                <option value="4">see my competitor's keywords</option>
+                                <option value="5">compare my site to comprtitor's</option>
+                                <option value="6">compare trafiic matrics ro several website</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger btn-lg btn-custom">Let's go!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+        </div>
+        <!-- features-->
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class="text centre padding-size-20">ALEXA'S<b> MARKETING STACKS</b></h6>
+                <div class="row">
+                    <div class="text centre padding-size-20 paragrph">
+                        <h3>
+                            you'll find all the tools that you need to improve your content,SEO and PPC strategy,prove your sucess
+                            and discover new ideas for growning your traffic.
+                        </h3>
+                    </div>
+                </div>
+                <div class="features">
+                <div class="row Padding2">
+                    <div class="col-md-2">
+                        <img src="https://try.alexa.com/wp-content/uploads/2020/09/2626_Alexa_Small-Projects_homepage-revisions_illustrations-05.png" width="143" height="200" alt="" class="img-responsive wp-image-7423">
+                        <h3 class="text_left text_padding"><a href="#">Content Research</a></h3>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-img-2_smallv2.png" width="142" height="200" alt="competitive website analysis" class="img-responsive wp-image-6057">
+                        
+                        <h3 class="text_left text_padding"><a href="#">Competetive Website analysis</a></h3>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-img-5_smallv2.png" width="143" height="200" alt="target audience analysis" class="img-responsive wp-image-6060">
+                        <h3 class="text_left text_padding"><a href="#">Target audience Analysis</a></h3>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-img-1_smallv2.png" width="142" height="200" alt="keyword research" class="img-responsive wp-image-6056">
+                        <h3 class="text_left text_padding"><a href="#">Keyword Research</a></h3>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-img-3_smallv2.png" width="143" height="200" alt="seo analysis" class="img-responsive wp-image-6058">
+                        <h3 class="text_left text_padding"><a href="#">SEO Analysis</a></h3>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-img-4_smallv2.png" width="143" height="200" alt="check backlinks" class="img-responsive wp-image-6059">
+                        <h3 class="text_left text_padding"><a href="#">Check Banklinks</a></h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 btn-custom2">
+                <button type="button" class="btn btn-danger btn-lg btn-custom"><b>STARTS YOUR FREE  TRIAL</b></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class="text-centre padding-size-20">WHO USES <b>ALEXA?</b></h6>
+            </div>
+        </div>
+        
+        <ul class="nav nav-tabs row">
+            
+            <li class="active col-md-3 padding-size-20 text centre"><a data-toggle="tab" href="#Marketing Director"><h4><b>Marketing Director</b></h4></a></li>
+            
+            
+            <li  class="col-md-3 padding-size-20 text centre"><a data-toggle="tab" href="#Leadership Teams"><h4><b>Leadership Teams</b></h4></a></li>
+             
+            
+            <li  class="col-md-3 padding-size-20 text centre"><a data-toggle="tab" href="#Business Professionals"><h4><b>Business Professionals</b></h4></a></li>
+              
+            
+            <li  class="col-md-3 padding-size-20 text centre"><a data-toggle="tab" href="#Publishers"><h4><b>Publishers</b></h4></a></li>
+            
+        </ul>
+           
+    
+        <div class="tab-content">
+            <div id="Marketing Director" class="tab-pane fade in active">
+                <div class="row padding-right-20">
+                    <div class="col-md-6">
+                        <h6 class="padding-size-20 text_right no-padding"><b>Marketing Strategy</b></h6>
+                        <h2>Marketing Directors find opportunities to drive traffic, improve their SEO and PPC, and uncover the best marketing strategy.</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>“I did a trial of about 30 SEO tools and I think that Alexa has the lowest barrier to entry of them all. It’s easy to use. And the data visualizations make digesting the information quick and easy.”</h2>
+
+                        <h2><b>Luke Richardson</b></h2>
+                        <h2>  Digital Marketing Manager, Vyopta</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="Leadership Teams" class="tab-pane fade">
+                <div class="row padding-right-20">
+                    <div class="col-md-6">
+                        <h6 class="padding-size-20 text_right no-padding"><b>Leadership Teams</b></h6>
+                        <h2>Leadership teams create board-friendly presentations benchmarking against the competition, demonstrating strengths and weaknesses, identifying new opportunities, and surfacing competitive threats.</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>“I browse Alexa every day seeking relative intelligence of our performance against our peers. It’s a benchmark that we use to judge our marketing initiatives. As a goal oriented CEO, I couldn’t live without Alexa.”</h2>
+
+                        <h2><b>David Kalt</b></h2>
+                        <h2>CEO, Reverb.com</h2>
+                        </div>
+                    </div>
+                </div>
+            <div id="Business Professionals" class="tab-pane fade">
+                <div class="row padding-right-20">
+                    <div class="col-md-12">
+                       <h6 class=" text_right padding-size-20 no-padding"><b>Evaluate Partnerships</b></h6>
+                      <h2>Analysts, Investors, and Business Development Professionals research the strength, popularity, and influence of potential partnerships, investment opportunities, and industry trends.</h2>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="Publishers" class="tab-pane fade">
+                <div class="row padding-right-20">
+                    <div class="col-md-12">
+                      <h6 class="padding-size-20 text_right no-padding"><b>Prove and Track Website Popularity</b></h6>
+                      <h2>Publishers use Certified Alexa Rank to prove the popularity and success of their website, and track progress over time.</h2>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        <div class="row padding-right-30 Padding2">
+            <div class="custom-col-md-2">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/vyopta-logo_2019.png" width="149" height="44" alt="vyopta logo" title="vyopta logo" class="img-responsive wp-image-5753">
+            </div>
+            <div class="custom-col-md-2">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/omega-logo_v2.png" width="151" height="44" alt="omega builders logo" title="omega builders logo" class="img-responsive wp-image-6165">
+            </div>
+            <div class="custom-col-md-2">
+                <img src="https://try.alexa.com/wp-content/uploads/2016/12/BrandIcons_reverb-144.png" width="112" height="51" alt="reverb logo" title="reverb logo" class="img-responsive wp-image-1627">
+            </div>
+            <div class="custom-col-md-2">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/altitude-logo_2019.png" width="143" height="44" alt="altitude seo logo" title="altitude seo logo" class="img-responsive wp-image-5750">
+            </div>
+            <div class="custom-col-md-2">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/recruiterbox-logo_v2.png" width="157" height="41" alt="recruiterbox logo" title="recruiterbox logo" class="img-responsive wp-image-6166">
+            </div>
+        </div>
+        </div>
+    <div class="container-fluid">
+        <div id="grad2">
+        <div class="row">
+            <div class="col-md-12">
+           <h6 class="padding-size-30"><b>Explore Use Cases</b></h6></div>
+        </div>
+        <div class="row padding-right-20 Padding2 features1">
+            <div class="col-md-2">
+                <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2020/09/2626_Alexa_Small-Projects_homepage-revisions_illustrations-06.png" width="65" height="65" alt="" class="img-responsive wp-image-7424"></div>
+                <h3 class=" text_left text_padding"><a href="#">Content Research</a></h3>
+
+            </div>
+            <div class="col-md-2">
+                <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-icon-2.png" width="65" height="65" alt="competitive website analysis icon" class="img-responsive wp-image-5781"></div>
+                <h3 class="text_left text_padding"><a href="#">Competetive Websie analysis</a></h3>
+            </div>
+            <div class="col-md-2">
+            <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-icon-5.png" width="65" height="65" alt="target audience analysis icon" class="img-responsive wp-image-5784"></div>
+                <h3 class="text_left text_padding"><a href="#">Target audience Analysis</a></h3>
+            </div>
+            <div class="col-md-2">
+            <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-icon-1.png" width="65" height="65" alt="keyword research icon" class="img-responsive wp-image-5780"></div>
+                <h3 class="text_left text_padding"><a href="#">Keyword Research</a></h3>
+                
+            </div>
+            <div class="col-md-2">
+            <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-icon-3.png" width="65" height="65" alt="seo analysis icon" class="img-responsive wp-image-5782"></div>
+                <h3 class="text_left text_padding"><a href="#">SEO Analysis</a></h3>
+            </div>
+            <div class="col-md-2">
+            <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_use-case-icon-4.png" width="65" height="65" alt="check backlinks icon" class="img-responsive wp-image-5783" ></div>
+                <h3 class="text_left text_padding"><a href="#">Check Banklinks</a></h3>
+            </div>
+        </div>
+      </div>
+       </div>
+    <div class="container">
+        <div class="row Padding2 padding-right-20">
+            <div class="col-md-4">
+                <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_mini-icon-1.png" width="44" height="75" alt="access api" title="access-api-icon" class="img-responsive wp-image-5754"></div>
+                <h6 class="padding-size-20  text_padding"><b>NEED API ACCESS</b></h6>
+               <h3 class="text_padding">Build Alexa's Data Into Your App With Our API</h3>
+                <div class="padding3">
+               <button type="button" class="btn btn-primary btn-sm btn-custom3">Get API access</button></div>
+            </div>
+            <div class="col-md-4 borders">
+                <div class="text-center">
+                <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_mini-icon-2.png" width="39" height="75" alt="download extension" title="download-extension-icon" class="img-responsive wp-image-5755"></div>
+                <h6 class="padding-size-20  text_padding "><b>GET THE EXTENSION</b></h6>
+               <h3 class="text_padding">FREE Instant Metrics on Any Site, Right from Your Browser</h3>
+                <div class="padding3">
+               <button type="button" class="btn btn-primary btn-sm btn-custom3">Get the extension</button></div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="https://try.alexa.com/wp-content/uploads/2019/04/Alexa-Homepage-2019_mini-icon-3.png" width="45" height="75" alt="browse top sites" title="browse-top-sites-icon" class="img-responsive wp-image-5756">
+                    
+                </div>
+                <h6 class="padding-size-20 text_padding"><b>BROWSE TOP SITES</b></h6>
+                <input class="searchbar padding-size-20 paddingtop" type="text" placeholder="or search for a site">
+                <div class="padding3">
+                <button type="button" class="btn btn-primary btn-sm btn-custom3">Find</button></div>
+            </div>
+        </div>
+ </div>
+
+    <div class="container-fluid padding-right-30">
+        <div id="grad3">
+            <div class="row width">
+                <div class="col-md-3">
+                <a href="/seo tools"><b>SEO Tools</b></a>
+                 <p><a href="/Keyword difficulty tools">Keyword difficulty tools</a></p>
+                <p><a href="/">Competitor keyword matrix</a></p>
+                    <p><a href="#">On-Page SEO Checker</a></p>
+                    <p><a href="#">Competitor Backlink checker</a></p>
+                    <p><a href="#">SEO Audit Tools</a></p>
+                </div>
+                <div class="col-md-3">
+                    <a href="/Competetive Analysis Tools"><b>Competetive Analysis Tools</b></a>
+                    <p><a href="#">Audience Overlap tools</a></p>
+                    <p><a href="#">Site Comparison</a></p>
+                    <p><a href="#">Website Traffic Statistics</a></p>
+                    <p><a href="#">Find Similar Sites</a></p>
+                    <p><a href="#">Top sites</a></p>
+                    <p><a href="#">Alexa Browser Extension</a></p>
+                    <p><a href="#">API</a></p>
+                
+                </div>
+                <div class="col-md-3">
+                    <a href="/Marketing resource"><b>Marketing resource</b></a>
+                    <p><a href="#">eBooks</a></p>
+                    <p><a href="#">Video Tutorials</a></p>
+                    <p><a href="#">Blog</a></p>
+                
+                
+                </div>
+                <div class="col-md-3">
+                    <a href="/Company"><b>Company</b></a>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Teams</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

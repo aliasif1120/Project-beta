@@ -1,0 +1,122 @@
+body{
+    overflow-x:hidden;
+}
+    html{
+    overflow-x:hidden;
+}
+@media screen and (max-width:1024px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .logo a img {
+        width: 68% !important;
+        height: 33px !important;
+    }
+    .header1 {
+        padding: 0px!important;
+    }
+
+    .header1 ul li {
+        padding-right: 28px !important;
+    }
+
+    .padding {
+        padding: 0px!important;
+    }
+
+    .u2 {
+        padding: 0px!important;
+    }
+    .row1{
+        width:75% !important;
+        text-align:center!important;
+        margin-right:100px!important;
+    }
+    .padding{
+        margin:0px;
+        padding-left:0px !important;
+    }
+    .icon p{
+        font-size:17px!important;
+    }
+    .para {
+        margin: 0;
+        padding-left: 155px!important;
+    }
+    .padding-left h1{
+        padding-left: 120px !important;
+    }
+    .call-to-action{
+        padding:0px !important;
+    }
+    .call-to-action h1{
+        padding-left:200px!important;
+    }
+    .call-to-action form{
+        padding-left:160px;
+    }
+    .call-to-action p{
+        padding-left:170px;
+    }
+    .footer-height{
+        height:620px!important;
+    }
+    .float ul li{
+        float:left !important;
+    }
+}
+@media  screen and (max-width:768px){
+    .btn-custom1{
+        display:none;
+    }
+    .custom-header{
+        padding-left:70px !important;
+    }
+    .logo a img{
+        width:80% !important;
+        height:30px !important;
+    }
+    .logo{
+        padding-top:2px !important;
+    }
+    .custom-img img{
+        display:none;
+    }
+    .links{
+        padding-left:50px !important;
+    }
+    .text-center1 img{
+        width:70% !important;
+        padding-top:10px;
+    }
+    .icon p{
+        font-size:16px !important;
+    }
+    .custom-media {
+        padding-left: 30px !important;
+        padding-top: 3px;
+    }
+    .custom-media2{
+        padding-left:26px;
+        padding-top:40px !important;
+    }
+    .custom-media3{
+        padding-top:16px !important;
+    }
+    .row1{
+        width:78% !important;
+    }
+    .para{
+        padding-left:69px !important;
+    }
+    .para p{
+        font-size:14px !important;
+    }
+    .para h1{
+        font-size:25px !important;
+    }
+    .para h4{
+        font-size:18px !important;
+    }
+}

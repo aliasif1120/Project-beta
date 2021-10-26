@@ -1,0 +1,953 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Font awesome css -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function () {
+
+            $("#btn1").click(function () {
+                var message = $("#john").val();
+                var showmessage = $("#field1").val();
+                var showmessage2 = $("#field2").val();
+                var dt = new Date();
+                var time = dt.getHours() + ":" + dt.getMinutes();
+                $("#field1, #field2").val(showmessage + "JoHn:" + '\n' + message +'\t'+ time + '\n').val(showmessage2 + "JoHn:" + '\n' + message+'\t' + time + '\n');
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $("#btn2").click(function () {
+                var message = $("#wick").val();
+                var showmessage = $("#field1").val();
+                var showmessage2 = $("#field2").val();
+                var dt = new Date();
+                var time = dt.getHours() + ":" + dt.getMinutes();
+                $("#field1, #field2").val(showmessage+'\t\t\t\t\t\t' + "Wick:" + '\n'+'\t\t\t\t\t\t' + message + '\t' + time + '\n').val(showmessage2+'\t\t\t\t\t\t' + "Wick:" + '\n'+'\t\t\t\t\t\t' + message + '\t' + time + '\n');
+
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+
+        .btn-custom {
+            font-size: 19px;
+            font-weight: 400;
+            background-color: #008060;
+            border: 5px #008060;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            border-radius: 5px;
+        }
+
+        .btn-custom1 {
+            padding-top: 19px;
+        }
+
+        .btn-custom2 {
+            background-color: dodgerblue;
+        }
+
+        .header {
+            background-color: #002e25;
+            height: 90px;
+        }
+
+        .header1 {
+            width: 100%;
+        }
+
+
+        .u1 {
+            float: left;
+            padding-left: 12px;
+        }
+
+            .u1 li {
+                float: left;
+                font-size: 18px;
+                font-weight: 400;
+                list-style: none;
+                padding-right: 50px;
+                padding-top: 29px;
+            }
+
+                .u1 li a {
+                    color: lightgray;
+                    text-decoration: none;
+                }
+
+                    .u1 li a:hover {
+                        color: white;
+                    }
+
+        .u2 {
+            float: left;
+        }
+
+            .u2 li {
+                float: left;
+                font-size: 18px;
+                font-weight: 400;
+                list-style: none;
+                padding-right: 38px;
+                padding-top: 29px;
+            }
+
+                .u2 li a {
+                    color: lightgray;
+                    text-decoration: none;
+                }
+
+                    .u2 li a:hover {
+                        color: white;
+                    }
+
+        .heading {
+            padding-top: 90px;
+        }
+
+        .text-center img {
+            margin: auto;
+            width: 80%;
+            padding-top: 60px;
+        }
+
+        .text-center1 {
+            text-align: right;
+        }
+
+        .searchbar {
+            width: 37%;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+            .searchbar:hover {
+                border: 2px solid #002e25;
+            }
+
+        .searchbar1 {
+            width: 55%;
+            border-radius: 4px;
+            border: 1px solid black;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+            .searchbar1:hover {
+                border: 2px solid #002e25;
+            }
+
+        .form {
+            padding-right: 30px;
+            text-align: center;
+        }
+
+        .links a {
+            color: black;
+            font-size: 18px;
+            list-style: none;
+            text-decoration: none;
+            color: #6b7177;
+            padding-top: 10px;
+        }
+
+        .links p {
+            margin-top: 25px;
+        }
+
+        .links a:hover {
+            color: black;
+        }
+
+        .text p {
+            font-size: 19px;
+            text-align: left;
+            color: #6b7177;
+            margin: 0px;
+        }
+
+            .text p a {
+                color: #002e25;
+                font-weight: 400;
+            }
+
+        .text1 h1 {
+            font-size: 33px;
+            font-weight: 400;
+            margin-bottom: 3px;
+        }
+
+        .text1 p {
+            font-size: 18px;
+            text-align: left;
+            color: #6b7177;
+            margin: 0px;
+        }
+
+        .icon {
+            text-align: left;
+        }
+
+            .icon p {
+                font-size: 18px;
+                text-align: left;
+                margin: 0px;
+                color: #6b7177;
+            }
+
+            .icon h4 {
+                font-size: 20px;
+            }
+
+        .box {
+            padding-top: 40px;
+            padding-left: 37px;
+        }
+
+        .para h1 {
+            font-size: 33px;
+            margin-bottom: 20px;
+        }
+
+        .para h4 {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .para p {
+            margin: 0px;
+            color: #6b7177;
+            font-size: 17px;
+        }
+
+        .header2 {
+            height: 320px;
+            background-color: #e8e9eb;
+        }
+
+            .header2 p {
+                font-size: 17px;
+                color: #6b7177;
+                margin: 0px;
+            }
+
+            .header2 h1 {
+                padding-top: 100px;
+                font-size: 36px;
+                padding-left: 90px;
+            }
+
+                .header2 h1 a {
+                    color: #008060;
+                    text-decoration: none;
+                }
+
+        .footer a {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            padding-left: 17px;
+            text-decoration: none;
+        }
+
+        .footer2 {
+            padding-right: 0px;
+            padding-top: 30px;
+            padding-left: 67px;
+        }
+
+            .footer2 h1 {
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .footer2 p {
+                margin: 0px;
+                margin-top: 10px;
+            }
+
+                .footer2 p a {
+                    color: #b6babf;
+                    margin: 0px;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+
+                    .footer2 p a:hover {
+                        color: white;
+                    }
+
+        .footer3 ul li {
+            float: left;
+        }
+
+            .footer3 ul li a {
+                text-decoration: none;
+                color: #d2d5d9;
+            }
+
+            .footer3 ul li h2 {
+                font-size: 17px;
+                padding-left: 10px;
+            }
+
+                .footer3 ul li h2:hover {
+                    color: white;
+                }
+
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-1 {
+            display: block;
+        }
+
+        .sub-menu-1 {
+            position: absolute;
+            width: 242px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+        .custom-dropdown-menu {
+            position: relative;
+        }
+
+        .sub-menu-1 a {
+            color: #6b7177 !important;
+        }
+
+            .sub-menu-1 a:hover {
+                color: black !important;
+            }
+
+        .sub-menu-1 ul {
+            padding-left: 8px !important;
+            padding-right: 5px;
+            margin-top: 10px;
+        }
+
+            .sub-menu-1 ul li {
+                padding-right: 10px !important;
+                padding-left: 10px;
+                padding-top: 0px;
+                padding-bottom: 11px;
+            }
+
+        .sub-menu-2 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-2 {
+            display: block;
+        }
+
+        .sub-menu-2 {
+            position: absolute;
+            width: 246px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+        .custom-dropdown-menu {
+            position: relative;
+        }
+
+        .sub-menu-2 a {
+            color: #6b7177 !important;
+        }
+
+            .sub-menu-2 a:hover {
+                color: black !important;
+            }
+
+        .sub-menu-2 ul {
+            padding-left: 8px !important;
+            padding-right: 5px;
+            margin-top: 10px;
+        }
+
+            .sub-menu-2 ul li {
+                padding-right: 22px !important;
+                padding-left: 11px;
+                padding-top: 0px;
+                padding-bottom: 12px;
+            }
+
+        .padding-btm {
+            padding-bottom: 0px !important;
+        }
+
+        .sub-menu-3 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-3 {
+            display: block;
+        }
+
+        .sub-menu-3 {
+            position: absolute;
+            width: 246px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+            .sub-menu-3 a {
+                color: #6b7177 !important;
+            }
+
+                .sub-menu-3 a:hover {
+                    color: black !important;
+                }
+
+            .sub-menu-3 ul {
+                padding-left: 8px !important;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+
+                .sub-menu-3 ul li {
+                    padding-right: 29px !important;
+                    padding-left: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 11px;
+                }
+
+        .sub-menu-4 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-4 {
+            display: block;
+        }
+
+        .sub-menu-4 {
+            position: absolute;
+            width: 246px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+            .sub-menu-4 a {
+                color: #6b7177 !important;
+            }
+
+                .sub-menu-4 a:hover {
+                    color: black !important;
+                }
+
+            .sub-menu-4 ul {
+                padding-left: 8px !important;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+
+                .sub-menu-4 ul li {
+                    padding-right: 44px !important;
+                    padding-left: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 11px;
+                }
+
+        .sub-menu-5 {
+            display: none;
+        }
+
+        .custom-dropdown-menu:hover .sub-menu-5 {
+            display: block;
+        }
+
+        .sub-menu-5 {
+            position: absolute;
+            width: 254px;
+            z-index: 1;
+            background: white;
+            border: 1px solid black;
+            border-radius: 11px;
+        }
+
+            .sub-menu-5 a {
+                color: #6b7177 !important;
+            }
+
+                .sub-menu-5 a:hover {
+                    color: black !important;
+                }
+
+            .sub-menu-5 ul {
+                padding-left: 8px !important;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+
+                .sub-menu-5 ul li {
+                    padding-right: 48px !important;
+                    padding-left: 15px;
+                    padding-top: 0px;
+                    padding-bottom: 13px;
+                }
+
+        .text-align {
+            text-align: left;
+        }
+
+        .size {
+            font-size: 14px;
+        }
+
+        form {
+            padding-top: 50px;
+        }
+
+        .custom-row {
+            padding: 0px;
+            margin-top: 6px;
+        }
+
+        .custom-box {
+            width: 50% !important;
+        }
+
+        .btn-custom3 {
+            padding-left: 15px;
+            padding-right: 15px;
+            border-color: transparent;
+            border-radius: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header ">
+            <div class="col-xl-2 logo col-lg-2 col-md-2">
+                <div style="padding-top:23px; text-align:right;">
+                    <a href="#"><img src="/static/shopify-logo.png" style="width:63%; height:38px;"></a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 header1">
+                <ul class="u1">
+
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Start</b></a>
+                        <div class="sub-menu-1 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Start your business</a>
+                                    <hr style="color:black;" />
+                                </li>
+                                <li><a href="#">Branding</a></li>
+                                <li><a href="#">Online presence</a></li>
+                                <li><a href="#">Store set up</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Sell</b></a>
+                        <div class="sub-menu-2 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Sell everywhere</a>
+                                    <hr style="width:190px;" />
+                                </li>
+                                <li><a href="#">Online store</a></li>
+                                <li><a href="#">Point of Sale</a></li>
+                                <li><a href="#">Buy Button</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Sales channels</a></li>
+                                <li><a href="#">Custom storefront tools</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Market</b></a>
+                        <div class="sub-menu-3 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Market your business</a>
+                                    <hr />
+                                </li>
+                                <li><a href="#">Email marketing</a></li>
+                                <li><a href="#">Shopify Ping</a></li>
+                                <li><a href="#">Google</a></li>
+                                <li><a href="#">Facebook Ads</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="custom-dropdown-menu">
+                        <a href="#"><b>Manage</b></a>
+                        <div class="sub-menu-4 animate__animated animate__fadeIn">
+                            <ul>
+                                <li class="padding-btm">
+                                    <a href="#">Manage everything</a>
+                                    <hr />
+                                </li>
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Capital</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 header1 custom-header">
+                <div class="padding header-padding" style="padding-left:30px;">
+                    <ul class="u2">
+                        <li><a href="#"><b>Pricing</b></a></li>
+                        <li class="custom-dropdown-menu">
+                            <a href="#"><b>Learn</b></a>
+                            <div class="sub-menu-5 animate__animated animate__fadeIn">
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Business courses</a></li>
+                                    <li><a href="#">Guides</a></li>
+                                    <li><a href="#">Forums</a></li>
+                                    <li><a href="#">Free tools</a></li>
+                                    <li><a href="#">Podcasts</a></li>
+                                    <li><a href="#">Business encyclopedia</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><b>Log in</b></a></li>
+
+                    </ul>
+                    <div class="btn-custom1">
+                        <button onclick="showalert();" type="button" class="btn btn-primary btn-lg btn-custom "><b>Start free trial</b></button>
+                        <script type="text/javascript">
+                            function showalert() {
+                                var FNAME = document.getElementById('fname').value;
+                                var LNAME = document.getElementById('lname').value;
+                                var EMAIL = document.getElementById('email').value;
+                                var BUDGET = document.getElementById('budget').value;
+                                var DAYS = document.getElementById('no of days').value;
+                                
+                                var MESSAGE = document.getElementById('message').value;
+                                var MESSAGE = MESSAGE.toUpperCase();
+
+                                var currency = document.getElementsByName('Currency');
+                                var dr = 150;
+                                var pd = 216;
+                                var i;
+                                for (i = 0; i < currency.length; i++) {
+                                    if (currency[i].checked) {
+                                        var selected_currency =  currency[i].value;
+                                    };
+                                }
+                                var Operation = DAYS*dr*BUDGET;
+                                var Operation2 = DAYS*pd*BUDGET;
+                                var Operation3 = DAYS * BUDGET;
+                                
+
+                                document.write("Name :" + FNAME + " " + LNAME);
+                                document.write("<br>");
+                                
+                                document.write("Email :"+ EMAIL);
+                                document.write("<br>");
+                                
+                                document.write("Budget :" + BUDGET);
+                                document.write("<br>");
+
+                               
+                                document.write("DAYS :"+ DAYS);
+                                document.write("<br>");
+                                document.write("MESSAGE :" + MESSAGE);
+
+                                document.write("<br>");
+
+                                document.write("Selected Currency :" + selected_currency);
+                                document.write("<br>");
+                                if (selected_currency == 'Dollar') {
+                                    document.write("Total expence:" + Operation+"Rs");
+                                }
+                                else if (selected_currency == 'Pound') {
+                                    document.write("Total expence:" + Operation2+"Rs");
+                                }
+                                else if (selected_currency == 'Rupee') {
+                                    document.write("Total expence:" + Operation3 + "Rs");
+                                }
+                            }
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-xl-6">
+                    <label class="size" for="Fname">First Name:</label>
+                    <input type="text" size="25" class="form-control size" id="fname" name="fname" placeholder="First Name" />
+                    <script type="text/javascript">{
+                            var FNAME = document.getElementById('fname');
+                        }
+                    </script>
+                </div>
+                <div class="form-group col-xl-6">
+                    <label class="size" for="Lname">Last Name:</label>
+                    <input type="text" class="form-control size" id="lname" name="lname" placeholder="Last Name" />
+                    <script type="text/javascript">{
+                            var LNAME = document.getElementById('lname');
+                        }
+                    </script>
+                </div>
+                <div class="form-group col-xl-12">
+                    <label class="size" for="Email">Email:</label>
+                    <input type="text" class="form-control size" id="email" name="email" placeholder="abcd@gmail.com" />
+                    <script type="text/javascript">{
+                            var EMAIL = document.getElementById('email');
+                        }
+                    </script>
+                </div>
+                <div class="form group col-xl-12 text-align">
+                    <label class="size" for="budget">Budget:</label>
+                    <input type="text" class="form-control" id="budget" name="budget" />
+                    <script type="text/javascript">{
+                            var BUDGET = document.getElementById('budget');
+                            }
+                    </script>
+                </div>
+                <div class="form-group col-xl-12">
+                    <label class="size" for="Currency">Currency:</label><br />
+                    <input type="radio" id="currency" name="Currency" value="Dollar">
+                    <label for="Dollar">Dollar</label>
+                    <input type="radio" id="currency" name="Currency" value="Rupee">
+                    <label for="Rupee">Rupee</label>
+                    <input type="radio" id="currency" name="Currency" value="Pound">
+                    <label for="Pound">Pound</label>
+
+
+                </div>
+                <div class="form-group col-xl-12">
+                    <label class="size" for="no of days">No of days:</label>
+                    <input type="text" class="form-control" id="no of days" name="no of days" />
+                    <script type="text/javascript">{
+                                    var DAYS = document.getElementById('no of days');
+                                }
+                    </script>
+                </div>
+                <div class="form group col-xl-12 text-align">
+                    <label class="size" for="message">Message:</label>
+                    <textarea class="form-control custom-box" id="message" name="message" rows="10"></textarea>
+                    <script type="text/javascript">{
+                                    var MESSAGE = document.getElementById('message');
+                                }
+                    </script>
+                </div>
+            </div>
+
+        </form>
+        
+        <div class="col-xl-12 custom-row">
+            <button type="button" onclick="showalert();" class="btn btn-primary btn-lg btn-custom btn-custom2"><b>Submit</b></button>
+        </div>
+    </div>
+    <div class="container">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-xl-6">
+                <label class="size" for="field1">Field1 :</label>
+                <textarea class="form-control" id="field1" name="Field1" placeholder="John" rows="10" disabled></textarea>
+               <div class="txt1">
+                <input type="text" id="john" name="John" /></div>
+                <div style="padding-top:10px;">
+                <button id="btn1" type="button" class="btn btn-primary btn-lg btn-custom3">Send</button></div>
+            </div>
+            <div class="form-group col-xl-6">
+                <label class="size" for="field2">Field2:</label>
+                <textarea class="form-control" id="field2" name="Field2" placeholder="Wick" rows="10" disabled></textarea>
+                <div class="txt2">
+                <input type="text" id="wick" name="Wick" /></div>
+                <div style="padding-top:10px;">
+                    <button id="btn2" type="button" class="btn btn-primary btn-lg btn-custom3">Send</button>
+                </div>
+            </div>
+        </div>
+    </form>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <p>Hello there whats going on what can i do for youW3Schools is a training website for learning web technologies online. Content includes tutorials and references relating to HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, React.js, SQL, Bootstrap, Sass, Node.js, jQuery, XQuery, AJAX, XML, Raspberry Pi, C++, C# and Java. Wikipedia</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="padding-top:105px;">
+
+        <div class="row header2">
+            <div class="col-xl-7 col-lg-12 call-to-action">
+
+                <h1>Start your 14-day<a href="#"> free trial</a> today!</h1>
+            </div>
+            <div class="col-xl-5 col-lg-12 call-to-action" style="padding-top:97px;">
+                <form>
+                    <input class="searchbar1" type="text" placeholder="Enter your email address">
+
+                    <button type="button" class="btn btn-primary btn-lg btn-custom " style="padding-top:10px; margin-bottom:9px; margin-left:17px;"><b>Start free trial</b></button>
+
+                </form>
+                <p>Try Shopify free for 14 days, no credit card required. By entering</p>
+                <p>your email, you agree to receive marketing emails from Shopify.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-height" style="height: 555px; background-color: #002e25;">
+
+        <div class="row">
+            <div class="col-md-12 footer">
+                <div style="padding-left: 50px; padding-top: 25px;">
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press and Media</a>
+                    <a href="#">Shopify Plus</a>
+                    <a href="#">Sitemap</a>
+
+                </div>
+                <hr style="width: 90%; margin: 0; margin-left: 64px; margin-top: 25px; border-color: #6b71776e; text-align: left;" />
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 footer2">
+                <div class="col-md-4">
+                    <h1>ONLINE STORE</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">Sell online</a></p>
+                        <p><a href="#">features</a></p>
+                        <p><a href="#">Examples</a></p>
+                        <p><a href="#">Website editor</a></p>
+                        <p><a href="#">Online retail</a></p>
+                        <p><a href="#">Ecommerce website</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="padding-top:23px;">
+                        <p><a href="#">Domain names</a></p>
+                        <p><a href="#">Themes</a></p>
+                        <p><a href="#">Shopping cart</a></p>
+                        <p><a href="#">Ecommerce hosting</a></p>
+                        <p><a href="#">Mobile commerce</a></p>
+                        <p><a href="#">Ecommerce software</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="padding-top:23px;">
+                        <p><a href="#">Online store builder</a></p>
+                        <p><a href="#">Oberlo</a></p>
+                        <p><a href="#">Dropshipping business</a></p>
+                        <p><a href="#">Store themes</a></p>
+                        <p><a href="#">Cross-Border Ecommerce</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 footer2">
+                <div class="col-md-4">
+                    <h1>POINT OF SALE</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">Point of sale</a></p>
+                        <p><a href="#">Features</a></p>
+                        <p><a href="#">Hardware</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1>SUPPORT</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">24/7 support</a></p>
+                        <p><a href="#">Shopify Help Center</a></p>
+                        <p><a href="#">Forums</a></p>
+                        <p><a href="#">API documentation</a></p>
+                        <p><a href="#">Free tools</a></p>
+                        <p><a href="#">Free stock photos</a></p>
+                        <p><a href="#">Website for sale</a></p>
+                        <p><a href="#">Hatchful</a></p>
+                        <p><a href="#">Business name generator</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1>SHOPIFY</h1>
+                    <div style="padding-top:2px;">
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Partner program</a></p>
+                        <p><a href="#">Affiliated program</a></p>
+                        <p><a href="#">App developers</a></p>
+                        <p><a href="#">Investors</a></p>
+                        <p><a href="#">Blog topics</a></p>
+                        <p><a href="#">Shopify events</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 110%; margin: 0; margin-left: -15px; margin-top: 25px; border-color: #6b71776e; text-align: left;" />
+        <div class="row footer3">
+            <div class="col-xl-6 col-lg-6">
+
+                <a href="#"><i class="fa fa-facebook-square" style="font-size:24px; color:white; padding-left:68px; padding-top:45px;"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-youtube-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-instagram" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+                <a href="#"><i class="fa fa-pinterest-square" style="font-size:24px; color:white; padding-left:25px;"></i></a>
+
+            </div>
+            <div class="col-xl-6 col-lg-6 floa">
+                <div style=" padding-left: 290px; padding-top: 45px;">
+                    <ul>
+                        <li><a href="#"><h2>Terms of Service</h2></a></li>
+                        <li><a href="#"><h2>Privacy policy</h2></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
